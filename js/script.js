@@ -1,6 +1,6 @@
 const toggleButton = document.getElementById("menu_icon");
 const myDiv = document.getElementById("navbar");
-
+if(window.innerWidth < 991){
 myDiv.style.display = "none";
 
 toggleButton.addEventListener("click", function() {
@@ -14,3 +14,4 @@ toggleButton.addEventListener("click", function() {
 myDiv.addEventListener("click", function() {
     myDiv.style.display = "none";
   });
+}
