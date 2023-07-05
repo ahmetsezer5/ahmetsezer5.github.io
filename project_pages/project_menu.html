@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/project_style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>All-Projects</title>
+</head>
+<body>
+    <div   class="wrapper">
+        
+        <div class="side_bar" id="side_bar">
+            <a class="close_side_bar" id="close_side_bar">X</a>
+            <div class="interduction_part">
+                <img src="../images/about.png">
+                <h2>Ahmet Sezer Kömürcü</h2>
+            </div>
+
+            <div class="side_bar_main_content">
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../pages/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="../pages/projects.html">Projects</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        
+
+
+
+
+
+
+        <div class="main_bar">
+            <div class="top_bar" id="tap_bar">
+                <a class="side_bar_icon" id="side_bar_icon"><i class='bx bx-menu' ></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const sideBarIcon = document.getElementById("side_bar_icon");
+        const Tap_bar = document.getElementById("tap_bar");
+        const sideBar = document.getElementById("side_bar");
+        const closeSideBar = document.getElementById("close_side_bar");
+        if(window.innerWidth < 991){
+            sideBar.style.display = "none";
+            Tap_bar.style.display = "block";
+        sideBarIcon.addEventListener("click", () => {
+            sideBar.style.display = "block";
+            Tap_bar.style.display = "none";
+        });
+
+        closeSideBar.addEventListener("click", () => {
+            sideBar.style.display = "none";
+            Tap_bar.style.display = "block";
+        });}
+        else{
+            sideBar.style.display = "block";
+            Tap_bar.style.display = "none";}
+    </script>
+</body>
+</html>
