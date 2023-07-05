@@ -15,3 +15,7 @@ myDiv.addEventListener("click", function() {
     myDiv.style.display = "none";
   });
 }
+else{
+	myDiv.style.display ="block";
+}
+
